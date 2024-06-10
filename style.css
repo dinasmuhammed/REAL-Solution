@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #343232;
+    text-align: center;
+    font-size: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+   
+}
+.navbar img {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+}
+.navbar h1 {
+    color: white;
+    margin-right: auto; /* Adjusted to align properly in flexbox */
+}
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+.navbar li {
+    display: inline-block;
+}
+.navbar li a {
+    color: white;
+    font-weight: bold;
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.navbar li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+    .navbar ul.show {
+        display: flex;
+    }
+    .navbar li {
+        text-align: center;
+        margin: 10px 0;
+    }
+    .navbar li a {
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+.navbar-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: block;
+    }
+}
+
+  .carousel{
+    width: 100%;
+    height: 10%;
+  }
+
+ 
+  .card .img-fluid {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+h1 {
+    font-weight: bold;
+    font-style: italic;
+    color: #2f2e2e; 
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+}
+
+.spacer {
+    margin-bottom: 20px; 
+    padding-top: 30px; 
+}
